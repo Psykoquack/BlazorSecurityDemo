@@ -20,7 +20,7 @@ namespace IdentityProvider
         public static IEnumerable<ApiResource> Apis =>
             new ApiResource[]
             {
-                new ApiResource("api1", "My API #1")
+                new ApiResource("protectedapi", "The protected api")
             };
 
 
@@ -34,7 +34,7 @@ namespace IdentityProvider
                     RequirePkce = true,
                     RequireClientSecret = false,
                     AllowedCorsOrigins = {"https://localhost:44316"},
-                    AllowedScopes = {"openid", "profile"},
+                    AllowedScopes = {"openid", "profile", "protectedapi"},
                     RedirectUris = {"https://localhost:44316/authentication/login-callback"},
                     PostLogoutRedirectUris = {"https://localhost:44316"},
                     Enabled = true
