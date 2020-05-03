@@ -33,10 +33,10 @@ namespace IdentityProvider
                     AllowedGrantTypes = GrantTypes.Code,
                     RequirePkce = true,
                     RequireClientSecret = false,
-                    AllowedCorsOrigins = {"https://localhost:5001"},
+                    AllowedCorsOrigins = {"https://localhost:44316"},
                     AllowedScopes = {"openid", "profile"},
-                    RedirectUris = {"https://localhost:5001/authentication/login-callback"},
-                    PostLogoutRedirectUris = {"https://localhost:5001"},
+                    RedirectUris = {"https://localhost:44316/authentication/login-callback"},
+                    PostLogoutRedirectUris = {"https://localhost:44316"},
                     Enabled = true
                 }
             };
